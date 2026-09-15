@@ -22,7 +22,7 @@ public class Program
         System.out.print("How many pages remain to read? ");
         /*Convert string to an unsigned integer*/
         var n = Integer.parseUnsignedInt(stdin.readLine());    
-        var d = n / k + n % k;  // Number of days the book will last
+        var d = (n + k - 1) / k;  // Number of days the book will last
         // Print to screen
         System.out.printf("This book will last you another %d days.\r\n",d);
     }
